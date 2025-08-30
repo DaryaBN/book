@@ -327,16 +327,16 @@ body{
   font-size: 16px;
 }
 .book{
-  width: 300px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
   margin: 70px auto 50px auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .card {
-   width: 300px;
-    height: 400px;
+  width: 600px;
+  height: 600px;
   /* background-image: url(/img/); */
   background-size: cover;
   background-repeat: no-repeat;
@@ -348,18 +348,17 @@ body{
   align-items: flex-end;
   padding: 0 36px;
   perspective: 2500px;
-  margin: 0 50px;
 }
 .cover-image {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 400px;
+  height: 600px;
   /* height: 500px; */
   /* object-fit: cover; */
 }
 .wrapper {
-  height: 400px;
+  height: 600px;
   transition: all 0.5s;
   position: absolute;
   z-index: -1;
@@ -414,19 +413,19 @@ body{
   position: relative;
   top: 69px;
   /* padding-top: 180px; */
-  height: 278px;
+  height: 400px;
   /* width: 100%; */
   transition: transform 0.5s;
 }
 .card:hover .title {
-  transform: translate3d(0%, -50px, 100px);
+  transform: translate3d(0%, -10px, 100px);
 }
 .character {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   /* width: 500px; */
-  height: 400px;
+  height: 600px;
   opacity: 0;
   transition: all 0.5s;
   position: absolute;
@@ -434,7 +433,7 @@ body{
 }
 .card:hover .character {
   opacity: 1;
-  transform: translate3d(0%, -30%, 100px);
+  transform: translate3d(0%, -10%, 100px);
 }
 .botton{
   width: 200px;
@@ -512,6 +511,30 @@ body{
     height: auto;
     flex-direction: column;
   }
+  .book{
+    width: 300px;
+    height: 400px;
+    margin: 70px auto 50px auto;
+  }
+  .card {
+    width: 300px;
+    height: 400px;
+   margin-top: 70px;
+  }
+  .wrapper {
+    height: 400px;
+    margin-top: 70px;
+  }
+  .cover-image {
+    height: 400px;
+  }
+  .character {
+    height: 400px;
+  }
+  .title {
+    top: 69px;
+    height: 278px;
+  }
   .Web{
     margin: 0px auto 0px auto;
   }
@@ -528,11 +551,4 @@ body{
     padding: 5px;
     margin-bottom: 10px;
   }
-  .layers_middle{
-  transition: transform 0.2s ease-out;
-}
-.layers_front{
-  transition: transform 0.2s ease-out;
-}
-
 }

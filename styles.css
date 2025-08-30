@@ -126,7 +126,7 @@ body{
   letter-spacing: calc(var(--index) / 2.25);
 }
 .layers_caption{
-  font-size: calc(var(--index) * 2.4);
+  font-size: calc(var(--index) * 3.2);
   letter-spacing: calc(var(--index) / 3.5);
   margin-top: calc(var(--index) * .75);
   text-shadow: 0 0 15px rgba(0,0,0,255);
@@ -154,7 +154,7 @@ body{
   letter-spacing: calc(var(--index) / 9);
   text-align: center;
   width: 70%;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 70px auto;
   color: rgba(255,219,51,255);
   text-shadow: 0 0 15px rgba(0,0,0,255);
 }

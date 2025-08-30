@@ -60,48 +60,7 @@ sections.forEach(section => {
   observer.observe(section);
 });
 
-const textParts = [
-  "Цикл ставший бестселлером АТ",
-  "Путь от простолюдина до князя",
-  "дворянине, метеориты, академия магии.. и гусь-вампир"
-];
 
-let currentPart = 0;
-let index = 0;
-const element = document.getElementById("typewriter");
-
-function typeWriter() {
-  if (currentPart < textParts.length) {
-    if (index < textParts[currentPart].length) {
-      // Добавляем по одному символу
-      // Проверяем, есть ли уже содержимое
-      if (index === 0) {
-        // Начинаем новую часть с тега
-        if (currentPart === 0) {
-          element.innerHTML = ""; // очищаем перед началом
-        }
-        // Можно вставлять только при начале новой части
-        // или добавлять к существующему содержимому
-        // В данном случае, добавим к существующему
-        // (если хотите, чтобы каждая часть начиналась с новой строки)
-        // то лучше очищать и добавлять новую
-      }
-      
-      // Добавляем текущий символ
-      element.innerHTML += textParts[currentPart].charAt(index);
-      index++;
-      setTimeout(typeWriter, 50);
-    } else {
-      // После завершения части добавляем перенос строки
-      element.innerHTML += "<br><br>"; // или один <br>
-      currentPart++;
-      index = 0;
-      setTimeout(typeWriter, 500);
-    }
-  }
-}
-
-typeWriter();
 
 const comments = [
   {

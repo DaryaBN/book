@@ -10,6 +10,16 @@
   font-family: 'MyCustomFont'; /* название шрифта, которое будете использовать */
   src: url('/fonts/anotheramericarusbylyajka.otf') format('opentype');
 }
+@font-face {
+  font-family: 'MyCustomFont2';
+  src: url('/fonts/cinzel_bold.ttf') format('truetype');
+}
+
+/* Третий шрифт, например, в WOFF */
+@font-face {
+  font-family: 'MyCustomFont3';
+  src: url('/fonts/Impact.ttf') format('woff');
+}
 body{
   background-color: #010101;
   color: #fff;
@@ -140,8 +150,8 @@ body{
 .main_article_header{
   text-transform: uppercase;
   font-size: calc(var(--index) * 2.8);
-  /* letter-spacing: calc(var(--index) / 7.5); */
-  letter-spacing: calc(var(--index) / 1.85);
+  font-family: 'MyCustomFont3', sans-serif;
+  letter-spacing: calc(var(--index) / 9);
   text-align: center;
   width: 70%;
   margin: 0 auto 0 auto;
@@ -184,7 +194,7 @@ body{
 }
 .main_article_hero_text{
   text-transform: uppercase;
-  font-size: calc(var(--index) * 2.25);
+  font-size: calc(var(--index) * 1.85);
   letter-spacing: calc(var(--index) / 7.5);
   text-align: center;
   padding: 10px;
@@ -192,6 +202,7 @@ body{
   z-index: 2;
   margin-top: auto;
   margin-bottom: auto;
+  font-family: 'MyCustomFont3', sans-serif;
 }
 .main_article_botton{
   width: 200px;
@@ -281,9 +292,9 @@ body{
 }
 .comment_name_time{
  display: flex;
+ font-family: 'MyCustomFont2', sans-serif;
 }
 .comment_name{
-  letter-spacing: calc(var(--index) / 7.5);
   color: #bcbccb;
   margin-right: 10px;
   font-weight: 500;
@@ -291,19 +302,19 @@ body{
 
 }
 .comment_time{
-  letter-spacing: calc(var(--index) / 7.5);
   color: #bcbccb;
   font-weight: 300;
   font-size: 13px;
 
 }
 .comment_text{
-  font-family: 'Arial', sans-serif;
+  font-family: 'MyCustomFont2', sans-serif;
+  /* letter-spacing: calc(var(--index) / 10); */
   color: #dde1ee;
   font-weight: 500;
   overflow-wrap: break-word;
   margin: 7px 0 7px 0;
-  font-size: 20px;
+  font-size: 18px;
   max-height: 100px; /* или другая нужная высота */
   overflow-y: auto;  /* появляется вертикальная полоса прокрутки при переполнении */
   padding-right: 10px; /* чтобы не было обрезки полосы прокрутки */
@@ -456,15 +467,24 @@ body{
   height: 60px;
   margin: 30px auto 10px auto;
 }
+.Telegram{
+   margin: 0px auto 0px auto;
+}
 .copy{
   opacity: 0.45;
+  font-family: 'MyCustomFont2', sans-serif;
   text-align: center;
   margin: 0 auto 0 auto;
+  font-size: 12px;
+  margin-bottom: 10px;
 }
 @media (max-width: 600px) {
   .main_article_content_img{
     width: 200px;
   }
+  .main_article_header{
+  font-size: calc(var(--index) * 1.8);
+}
   .mask-image{
     max-width: 150px;
   }
@@ -476,7 +496,7 @@ body{
     max-width: 150px;
   }
   .main_article_hero_text{
-    font-size: calc(var(--index) * 1.35);
+    font-size: calc(var(--index) * 0.85);
   }
   .main_article_botton{
     width: 100px;
@@ -490,13 +510,21 @@ body{
     height: auto;
     flex-direction: column;
   }
+  .Web{
+    margin: 0px auto 0px auto;
+  }
   .Web_tg{
     width: 80px;
     height: 60px;
-    margin: 0px auto 10px auto;
+    margin: 0px auto 0px auto;
   }
   .comment_text{
     font-size: 12px;
+  }
+  .copy{
+    font-size: 8px;
+    padding: 5px;
+    margin-bottom: 10px;
   }
 
 }

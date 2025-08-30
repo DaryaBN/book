@@ -106,10 +106,12 @@ body{
   z-index: 0;
 }
 .layers_middle{
-  transform: translate3d(0, calc(var(--scrollTop)/2.5), 0);
+  transform: translate3d(0, calc(var(--scrollTop)/3.5), 0);
+  /* transition: transform 0.2s ease-out; */
 }
 .layers_front{
-  transform: translate3d(0, calc(var(--scrollTop)/5.7), 0);
+  transform: translate3d(0, calc(var(--scrollTop)/7.7), 0);
+  /* transition: transform 0.2s ease-out; */
   z-index: 2;
 }
 .layers_header{
@@ -526,5 +528,11 @@ body{
     padding: 5px;
     margin-bottom: 10px;
   }
+  .layers_middle{
+  transition: transform 0.2s ease-out;
+}
+.layers_front{
+  transition: transform 0.2s ease-out;
+}
 
 }

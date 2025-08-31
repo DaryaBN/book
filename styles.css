@@ -474,7 +474,6 @@ body{
 .title {
   position: relative;
   top: 69px;
-  /* padding-top: 180px; */
   height: 400px;
   /* width: 100%; */
   transition: transform 0.5s;

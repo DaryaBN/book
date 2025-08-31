@@ -224,21 +224,20 @@ body{
   object-fit: cover;
   pointer-events: none;
 }
-.bottom_black{
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.987) 60%, rgba(0, 0, 0, 0) 100%);
-}
 .heWithe{
   mask-image: radial-gradient(circle, rgb(0, 0, 0) 18%, rgba(0, 0, 0, 0) 70%);
 }
 .loraWithe{
   width: calc(var(--index) * 27);
   mask-image: 
-      linear-gradient(to left, rgba(0, 0, 0, 0.161) 10%, rgba(0, 0, 0, 0) 100%),
+      linear-gradient(to left, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 100%),
       linear-gradient(to bottom, rgb(0, 0, 0) 1%, rgba(0, 0, 0, 0) 100%);
   }
 .mashaWithe{
   width: calc(var(--index) * 21);
-  mask-image: linear-gradient(to right, rgba(0,0,0,0.7) 30%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0) 95%, rgba(0,0,0,0) 100%);
+  mask-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.854) 1%, rgba(0, 0, 0, 0) 100%);
 }
 .gooseWithe{
   mask-image: radial-gradient(circle, rgb(0, 0, 0) 19%, rgba(0, 0, 0, 0) 60%);
@@ -556,7 +555,9 @@ body{
   }
   .mashaWithe{
     width: calc(var(--index) * 18);
-    mask-image: linear-gradient(to right, rgba(0,0,0,0.7) 30%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0) 95%, rgba(0,0,0,0) 100%);
+    /* mask-image: 
+      linear-gradient(to left, rgba(0, 0, 0, 0.161) 10%, rgba(0, 0, 0, 0) 100%),
+      linear-gradient(to bottom, rgb(0, 0, 0) 1%, rgba(0, 0, 0, 0) 100%); */
   }
    .gooseWithe{
     width: calc(var(--index) * 25);

@@ -149,17 +149,17 @@ body{
   text-transform: uppercase;
   font-weight: 900;
   color: rgba(255,219,51,255);
-  text-shadow: 0 0 15px rgba(0,0,0,255);
 }
 .layers_title{
   font-size: calc(var(--index) * 2.7);
   letter-spacing: calc(var(--index) / 2.25);
+  text-shadow: 10px 10px 14px rgb(0, 0, 0);
 }
 .layers_caption{
   font-size: calc(var(--index) * 3.2);
   letter-spacing: calc(var(--index) / 3.5);
   margin-top: calc(var(--index) * .75);
-  text-shadow: 0 0 15px rgba(0,0,0,255);
+  text-shadow: 10px 10px 14px rgb(0, 0, 0);
 }
 .layers_caption_book{
   width: calc(var(--index) * 28);
@@ -167,6 +167,8 @@ body{
   line-height: 1.1;
   font-size: calc(var(--index) * 2.8);
   font-family: 'MyCustomFont2', sans-serif;
+  text-shadow: 0px 0px 15px rgba(0,0,0,255);
+  -webkit-text-stroke: 3px rgba(29, 29, 29, 0.104);
 }
 .main_article{
   min-height: 100vh;

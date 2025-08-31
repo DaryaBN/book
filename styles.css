@@ -540,6 +540,10 @@ body{
   margin-bottom: 10px;
 }
 @media (max-width: 600px) {
+  .spinner_text_comment {
+    font-size: calc(var(--index) * 0.6);
+    color: rgba(61, 59, 59, 0.684);
+  }
   .main_article_content_img{
     margin: 0px auto 0 auto;
     width: 280px;
